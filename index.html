@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Camila's Backbone Chat</title>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Roboto+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Khand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+  <div id = "container">
+    <div id ="userOptions">
+      <h1 class="title">Welcome to CamChat, <span id="userName"></span>!</h1>
+      <h1 class="status">Status: <span id="userStatus"></span></h1>
+      <img id="options" src="img/user.png">
+    </div>
+
+    <div id = "chatslist">
+      <h2 id="usersTitle">Users:</h2>
+      <script type="x-template/underscore" id="contactView">
+        <div class = 'friend'>
+          <label class='contact'><a class="single"><%= name %></a></label>
+          <label class = 'contactStatus'><%= status %></label>
+          <label class = 'lastActiveDate'>last seen: <%= lastActiveDate %></label>
+          <img id="trash" src="img/cross.png">
+        </div>
+      </script> 
+    </div>
+
+    <div id = "chat">
+      <script type="x-template/underscore" id="messageView">
+
+        <label id = 'messageAuthor'><%= author%></label> 
+        <label id = 'messageDate'><%= date%></label>  
+        <label id = 'messageText'><%= text%></label> 
+        <img class="messageEdit" src="img/edit.png"> 
+        <img class="messageColor" src="img/paint.png">
+        <img class="messageDelete" src="img/delete.png">    
+        <img id="select" src="img/select.png">
+        
+
+      </script> 
+    </div>
+    <div id = "emojis">
+      <img src="img/1.png">
+      <img src="img/2.png">
+      <img src="img/3.png">
+      <img src="img/4.png">
+      <img src="img/5.png">
+      <img src="img/6.png">
+      <img src="img/7.png">
+      <img src="img/8.png">
+      <img src="img/9.png">
+      <img src="img/10.png">
+      <img src="img/11.png">
+    </div>
+    <div id = "textbox"> 
+      <input type="text" id = "messageInput" placeholder="Let's write up!">
+      <img id="sendMessage" src="img/send.png">
+      <img id="searchMessage" src="img/search.png">
+      <img id="deleteChat" src="img/trash.png">
+    </div>
+
+  </div>
+  <script src="js/lib/jquery.js"></script>
+  <script src="js/lib/json2.js"></script>
+  <script src="js/lib/underscore.js"></script>
+  <script src="js/lib/backbone.js"></script>
+  <script src="js/lib/backbone.radio.js"></script>
+  <script src="js/lib/backbone.marionette.min.js"></script>
+  <script type="text/javascript" src="js/lib/jquerymin.js"></script>
+  <script type="text/javascript" src="js/manipulator.js"></script>
+  <script type="text/javascript" src="js/models/user.js"></script>
+  <script type="text/javascript" src="js/models/message.js"></script>
+  <script type="text/javascript" src="js/collections/user.js"></script>
+  <script type="text/javascript" src="js/collections/message.js"></script>
+  <script type="text/javascript" src="js/views/user.js"></script>
+  <script type="text/javascript" src="js/views/message.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html> 

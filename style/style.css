@@ -1,0 +1,276 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #e3e0cf;
+}
+
+#select{
+	margin: -23px 100px 0px 240px !important;
+}
+
+.friend{
+	width: 200px;
+	height: 45px;
+	background-color: #b3c2bf;
+	box-shadow: 0 0 1px rgba(0,0,0,0.5);
+	text-align: center;
+}
+
+.messageDelete{
+	margin-right: 14px !important;
+}
+
+.messageEdit{
+	margin-right: 73px !important;
+	width: 16px !important;
+}
+#textBeenAt{
+	float: left;
+	margin: -12px 100px 0 151px;
+	text-align: center;
+	color: gray;
+	font-size: 8px;
+	text-decoration: none;
+	font-weight: 100;
+	font-family: monospace;
+}
+#usersTitle{
+	text-align: center;
+	color: #5a5a58;
+	font-family: 'Amatic SC', cursive;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0 !important;
+	
+}
+
+#eachFriend{
+	width: 100px;
+	height: 30px;
+	background-color: black;
+}
+
+#container {
+	margin: 15px 157px -8px 142px;
+	padding-top: 0px;
+	padding-bottom: 50px;
+	background-color: #c5d5cb;
+}
+#userOptions {
+	margin-bottom: 23px;
+	height: 50px;
+	padding: 5px;
+	background-color: #e3e0cf;
+	font-weight: bold;
+}
+
+#userOptions .title {
+	text-align: center;
+	font-size: 30px;
+	margin: 0;
+	color: #5a5a58;
+	font-family: 'Amatic SC', cursive;
+	margin-top: -11px;
+}
+
+#userOptions .status {
+	text-align: center;
+	font-size: 25px;
+	margin: 0;
+	color: #585d79;
+	font-family: 'Amatic SC', cursive;
+	margin-top: -3px;
+}
+
+#userOptions img{
+	float: right;
+	width: 35px;
+	margin-top: -40px;
+}
+
+#userOptions img:hover{
+	cursor: pointer;
+
+}
+
+#chatslist {
+	float: left;
+	width: 200px;
+	height: 562px;
+	margin: 2px 20px 0 20px;
+	overflow-y: auto;
+}
+
+.contact {
+	float: left;
+	margin: 10px 100px 0 0px;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Jura', sans-serif;
+	font-size: 15px;
+	padding-left: 10px;
+	cursor: pointer;
+}
+
+.contact a:hover {
+	color: #801f14;
+	text-shadow: 1px 1px 1px white, 0 0 1em white;
+}
+
+.single.active{
+	color: #801f14;
+	text-shadow: 1px 1px 1px white, 0 0 1em white;
+}
+
+.contactStatus {
+	float: left;
+	margin: -3px 100px 0 0px;
+	text-align: center;
+	color: gray;
+	font-family: 'Jura', sans-serif;
+	font-size: 12px;
+	margin-top: 0.5px;
+	padding-left: 10px;
+}
+
+.lastActiveDate {
+	float: left;
+	margin: -29px 100px 0 145px;
+	text-align: center;
+	color: gray;
+	font-size: 9px;
+	text-decoration: none;
+	font-weight: 100;
+	font-family: monospace;
+}
+
+#chatslist img{
+	width: 22px;
+	float: right;
+	margin: -25px 8px 0 0px;
+}
+
+#chatslist img:hover{
+	cursor: pointer;
+}
+
+#chat {
+	margin: 61px 20px 20px 240px;
+	height: 400px;
+	background-color: #b3c2bf;
+	overflow-y: auto;
+	box-shadow: 0 0 1px rgba(0,0,0,0.5);
+}
+
+#messageAuthor {
+	width: 600px;
+	float: left;
+	margin: 10px 0px 1px 15px;
+	color: gray;
+	font-size: 12px;
+	font-style: italic;
+	font-family: 'Jura', sans-serif;
+}
+
+#messageText {
+	width: 600px;
+	float: left;
+	margin: 0px 0px 1px 15px;
+	font-size: 15px;
+	font-family: 'Jura', sans-serif;
+}
+
+#messageDate {
+	width: 600px;
+	float: right;
+	text-align: right;
+	margin: -12px 706px 5px 15px;
+	color: gray;
+	font-size: 10px;
+	text-decoration: none;
+	font-weight: 100;
+	font-family: monospace;
+}
+
+#chat img {
+	width: 18px;
+	float: right;
+	margin: -24px 3px 0px 250px;
+}
+
+.messageColor{
+	margin-right: 43px !important;
+}
+
+#chat img:hover{
+	cursor: pointer;
+}
+
+#messageText img {
+	width: 30px;
+	float: left;
+	margin: 10px 0px 0px 3px;
+}
+
+#textbox {
+	height: 100px;
+	margin: -15px 20px 0 240px;
+}
+
+#messageInput {
+	float: left;
+	margin: 20px 10px 20px 20px;
+	width: 250px;
+	height: 20px;
+	padding: 10px;
+  	border: solid 5px #e3e0cf;
+  	transition: border 0.3s;
+}
+
+#sendMessage {
+	float: left;
+	margin: 40px 0 0 0;
+}
+
+
+#textbox input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+	width: 30px;
+	height: 30px;
+	margin: 30px 40px 0 30px;
+	-webkit-transition: all 0.1s ease-out;
+}
+
+#textbox input[type="color"]:hover{
+	cursor: pointer;
+}
+
+#textbox input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+
+#textbox img {
+	width: 32px;
+	margin: 25px 7px 0 11px;
+}
+
+#textbox img:hover{
+	cursor: pointer;																																		
+}
+
+#emojis {
+	height: 30px;
+	margin-left: 250px;
+	padding-left: 5px;
+}
+#emojis img {
+	margin: -5px 0 0 5px;
+}
+
+#emojis img:hover{
+	cursor: pointer;
+}
+
+
